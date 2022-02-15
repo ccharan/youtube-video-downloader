@@ -157,7 +157,7 @@ layout = [[sg.Text("YouTube URL", text_color='white')],
           [sg.Text()],
           [sg.Text()],
           [sg.Text('Thanks for trying YouTube Video Downloader', justification='center', size=(100,1), text_color='#ECCA1C')],
-          [sg.Text('@Charan',  tooltip='https://www.linkedin.com/in/charan-c/', enable_events=True, key='Charan', justification='right',size=(100,1), text_color='#EAE70F')]
+          [sg.Text('@Charan',  tooltip='https://www.linkedin.com', enable_events=False, key='Charan', justification='right',size=(100,1), text_color='#EAE70F')]
          ]
 
 # Create the window
@@ -260,7 +260,7 @@ while True:
             sg.popup_error("Something went wrong")
 
     if event == 'Charan':
-        webbrowser.open('https://www.linkedin.com/in/charan-c/')
+        webbrowser.open('https://www.linkedin.com')
             
 # Finish up by removing from the screen
 window.close()
